@@ -6,8 +6,12 @@ CNN based powder bed monitoring and anomaly detection for the selective laser me
 
 ## Dataset
 
+## Installation
 
-
+If you want to run the model on the provided samples, please install the requirements.txt first:
+```
+pip install -r requirements.txt
+```
 
 ## Architecture
 <img src="./model_plot.png" width=30% height=30%>
@@ -23,4 +27,5 @@ bibtex cite
 ```
 
 ## **Contact**
-aydin . deliktas [ at ] outlook . com
+aydin [.] deliktas [_at ] th-ab [.] de
+michael [.] moeckel [_at_] th-ab [.] de
