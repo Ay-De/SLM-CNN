@@ -10,8 +10,7 @@ CNN based powder bed monitoring and anomaly detection for the selective laser me
 
 
 ## Architecture
-![plot](./model_plot.png){:class="img-responsive"}
-
+<img src="./model_plot.png" width=50% height=50%>
 
 ## **Citation**
 
