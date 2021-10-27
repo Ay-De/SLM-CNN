@@ -16,6 +16,15 @@ pip install -r requirements.txt
 ## Architecture
 <img src="./model_plot.png" width=30% height=30%>
 
+## Results
+The model architecture (see previous section) was trained five times. Classification results were
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+
 ## **Citation**
 
 Please consider citing this paper if you deem it helpful in your research:
