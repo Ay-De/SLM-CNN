@@ -6,11 +6,15 @@ CNN based powder bed monitoring and anomaly detection for the selective laser me
 
 ## Classification Samples
 
-Some classified layer examples. Classification is done patch wise:
+Some classified layer examples. Classification is done patch wise with a patch size of 128x128 pixels.
+
+Colors:
+White: Powder | Blue: Objects | Red: Error
 
 <p float="left">
   <img src="/images/ClassifiedLayer1.png" width="250" />
   <img src="/images/ClassifiedLayer2.png" width="250" /> 
+  <img src="/images/ClassifiedLayer3.png" width="250" /> 
 </p>
 
 ## This repository
