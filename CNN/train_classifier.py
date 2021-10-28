@@ -62,13 +62,13 @@ def classifier_model():
 
 
 def main():
-    #Classes to predict
+    #Classes
     multiclass_classes = ['Powder', 'Object', 'Error']
     #Directory to the dataset containing the patches. 
-    #Note: Specify the path to the folder containing the patches dataset and the .csv files.
+    #Note: Dataset consists of patches grouped by built job and a .csv file, containing file names and labels.
     #'Training_dataset_patches.csv', 'Training_Data', 'Validation_dataset_patches.csv', 'Validation_Data'
     os.chdir('..')
-    model_path = 'model\\'
+    
     dataset_directory = 'Dataset\\'
     #Path to store the trained model
     model_path = 'model\\'
