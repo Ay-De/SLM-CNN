@@ -1,10 +1,21 @@
 # **SLM-CNN**
 
-This repository contains the source code, trained CNN model and examples for the proceedings paper:
+This repository contains the source code (written in python 3.7), trained CNN model and examples for the proceedings paper:
 
 CNN based powder bed monitoring and anomaly detection for the selective laser melting process
 
-## Dataset
+## This repository
+
+This repository contains:
+| Folder/file | Description |
+| --- | --- |
+| model | The trained CNN model, as described in the above mentioned paper |
+| source | Source code for training and evaluating the model |
+| source\CNN\ 
+| Test_Data\Layers | Sample full layer images from the test set |
+| Test_Data\Patches | Sample patches, extracted from layers of the test set |
+| requirements.txt | Containing the required python modules |
+| model_plot.png<br>model_summary.png | Tensorflow/Keras graphical output of the trained model |
 
 ## Installation
 
@@ -14,7 +25,15 @@ pip install -r requirements.txt
 ```
 
 ## Architecture
-<img src="./model_plot.png" width=30% height=30%> <img src="./model_summary.png" width=30% height=30%> 
+<table><tr>
+<td> <img src="./model_plot.png" alt="Drawing" style="width: 30%, height: 30%;"/> </td>
+<td> <img src="./model_summary.png" alt="Drawing" style="width:50%, height:50%"/> </td>
+</tr></table>
+
+<p float="left">
+  <img src="./model_plot.png" width=30% height=30%>
+  <img src="./model_summary.png" width=50% height=50%> 
+</p>
 
 ## Results
 The model architecture, as seen in the previous section, was trained five times. Classification results were obtained by averaging the classification results of the test set.
