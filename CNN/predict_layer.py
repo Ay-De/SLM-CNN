@@ -52,7 +52,7 @@ def split_image(source_image, window_size, window_overlap, source_dim):
 
 
 #This function will create an overlay image. Each Patch will have either the color
-#Green (Pulver), blue (Bauteil/object) or red (Fehler/Error)
+#White (Powder), blue (Object) or red (Error)
 #Inputs:
 #   predictions_logits: Predicted logits for each patch from the CNN (0: Pulver, 1: Bauteil, 2: Fehler)
 #   predictions_logits has 36 elements. (patch size 128, source dim 768x768, no overlap -> 768/128=6 -> 6x6=36 Patches)
@@ -115,8 +115,7 @@ def normalize(image_patches):
 
 def main():
     #########################################################################
-    #Function to visualize the powderbed in real time. The image overlay and the layer label are updated
-    #after each layer. Each Layer will get a binary Label (0 Good Powderbed, 1 Error in the Powderbed detected)
+    #Function to visualize an entire layer by the CNN classifier
     #########################################################################
 
     #Path to the CNN Model
