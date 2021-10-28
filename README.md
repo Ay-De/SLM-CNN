@@ -61,6 +61,6 @@ bibtex cite
 
 ## **Contact**
 
-aydin [.] deliktas [_at ] th-ab [.] de
+aydin [.] deliktas [at] th-ab [.] de
 
-michael [.] moeckel [_at_] th-ab [.] de
+michael [.] moeckel [at] th-ab [.] de
