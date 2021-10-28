@@ -11,9 +11,12 @@ This repository contains:
 | --- | --- |
 | model | The trained CNN model, as described in the above mentioned paper |
 | source | Source code for training and evaluating the model |
-| source\CNN\ 
+| CNN\train_classifier.py | File used to train the model |
+| CNN\predict_layer.py | File used to classify entire powder bed image layer |
+| CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
+| CNN\modules\* | Modules used in the source code |
 | Test_Data\Layers | Sample full layer images from the test set |
-| Test_Data\Patches | Sample patches, extracted from layers of the test set |
+| Test_Data\Patches | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
 | requirements.txt | Containing the required python modules |
 | model_plot.png<br>model_summary.png | Tensorflow/Keras graphical output of the trained model |
 
@@ -23,17 +26,11 @@ If you want to run the model on the provided samples, please install the require
 ```
 pip install -r requirements.txt
 ```
+After the installation, you can run the trained model by 
 
 ## Architecture
-<table><tr>
-<td> <img src="./model_plot.png" alt="Drawing" style="width: 30%, height: 30%;"/> </td>
-<td> <img src="./model_summary.png" alt="Drawing" style="width:50%, height:50%"/> </td>
-</tr></table>
+<img src="./model_summary.png" width=50% height=50%> 
 
-<p float="left">
-  <img src="./model_plot.png" width=30% height=30%>
-  <img src="./model_summary.png" width=50% height=50%> 
-</p>
 
 ## Results
 The model architecture, as seen in the previous section, was trained five times. Classification results were obtained by averaging the classification results of the test set.
