@@ -32,15 +32,16 @@ def main():
     #Load pretrained model
     model = tf.keras.models.load_model(model_path)
 
-    test_data = os.listdir(dataset_directory)
-    print(test_data)
+    X_test = []
+    y_test = []
 
-    test_data = [dataset_directory + s for s in test_data]
-    print(test_data)
-
-    #Create lists containing the training image paths and labels
-    X_test = list(dataset_directory + test_dataframe['Image'])
-    y_test = list(test_dataframe['Label'])
+    #Create a list of patch locations and their corcesponding labels
+    for c in range(len(multiclass_classes)):
+        cf = os.listdir(dataset_directory + multiclass_classes[c])
+        cf = [dataset_directory + multiclass_classes[c] + '\\' + s for s in cf]
+        cl = [c] * len(cf)
+        X_test = X_test + cf
+        y_test = y_test + cl
 
     #Predict with the trained model and generate the confusion matrix on the validation dataset
     #Note: Test Data is not shuffled for prediction to keep the order. Necessary for the confusion matrix
@@ -59,21 +60,20 @@ def main():
 
     #This part will show the wrongly classified patches and the integrated gradients as an overlay
     #Close the Matplot window to show the next one.
-    compare_arrays = (y_test == y_predicted_logits)
-    indices = np.where(compare_arrays == False)[0]
 
-    for i in range(0, len(indices)):
+    print(multiclass_classes)
+    for i in range(0, len(y_test)):
 
-        x = tf.io.read_file(X_test[indices[i]])
+        x = tf.io.read_file(X_test[i])
         x = tf.image.decode_png(x, channels=3)
 
-        print('True Label: ', multiclass_classes[int(y_test[indices[i]])])
-        print('Predicted Label: ', multiclass_classes[y_predicted_logits[indices[i]]])
-
+        print('True Label:', multiclass_classes[int(y_test[i])])
+        print('Predicted Label:', multiclass_classes[y_predicted_logits[i]])
+        print('Class Probability in %:', np.around(y_predicted_raw[i] * 100, decimals=2))
+        print('---------------------')
         baseline = tf.zeros(shape=(128, 128,3))
 
-        target_class = int(y_test[indices[i]])
-
+        target_class = int(y_test[i])
 
         _ = plot_img_attributions(model=model, image=x,
                                   baseline=baseline,
