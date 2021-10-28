@@ -120,9 +120,10 @@ def main():
     #########################################################################
 
     #Path to the CNN Model
-    model_path = '\\..\\model\\'
+    os.chdir('..')
+    model_path = '\\model\\'
     #Path to the folder containing the entire layer images
-    project_folder = '\\..\\Test_Data\\Layers\\'
+    project_folder = '\\Test_Data\\Layers\\'
 
     patch_size = 128
     patch_overlap = 128 #if patch_size == patch_overlap -> No overlap between two patches
