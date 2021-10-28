@@ -18,7 +18,7 @@ This repository contains:
 | Test_Data\Layers\ | Sample full layer images from the test set |
 | Test_Data\Patches\ | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
 | requirements.txt | Containing the required python modules |
-| model_plot.png<br>model_summary.png<br>model_accuracy.png<br>model_loss.png | Tensorflow/Keras graphical output of the trained model<br>Training and validation history|
+| images | Training and validation history<br>Tensorflow/Keras graphical output of the trained model<br>Classified Layer samples |
 
 ## Installation
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 After the installation, you can run the trained model by starting the python files.
 
 ## Architecture
-<img src="./model_summary.png" width=50% height=50%> 
+<img src="./images/model_summary.png" width=50% height=50%> 
 
 
 ## Results
@@ -45,8 +45,14 @@ The model architecture, as seen in the previous section, was trained five times.
 | Weighted Average Accuracy | 0.8618±0.0064 | 0.8574±0.0080 | 0.8552±0.0082 |
 
 <p float="left">
-  <img src="/model_accuracy.png" width="250" />
-  <img src="/model_loss.png" width="250" /> 
+  <img src="/images/model_accuracy.png" width="250" />
+  <img src="/images/model_loss.png" width="250" /> 
+</p>
+
+Some classified layer examples:
+<p float="left">
+  <img src="/images/ClassifiedLayer1.png" width="250" />
+  <img src="/images/ClassifiedLayer2.png" width="250" /> 
 </p>
 
 ## **Citation**
