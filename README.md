@@ -44,7 +44,10 @@ The model architecture, as seen in the previous section, was trained five times.
 | Macro Average Accuracy | 0.8600±0.0070 | 0.8650±0.0076 | 0.8581±0.0084 |
 | Weighted Average Accuracy | 0.8618±0.0064 | 0.8574±0.0080 | 0.8552±0.0082 |
 
-<img src="model_accuracy.png" width="400"/> <img src="model_loss.png" width="400"/> 
+<p float="left">
+  <img src="/model_accuracy.png" width="250" />
+  <img src="/model_loss.png" width="250" /> 
+</p>
 
 ## **Citation**
 
