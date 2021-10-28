@@ -22,18 +22,21 @@ if gpus:
 def main():
     #Classes to predict
     multiclass_classes = ['Powder', 'Object', 'Error']
+
     #Directory to the dataset containing the patches. 
-    #Note: Specify the path to the folder containing the patches dataset and the .csv files.
-    #'Training_dataset_patches.csv', 'Training_Data', 'Validation_dataset_patches.csv', 'Validation_Data'
-    dataset_directory = 'C:\\Users\\adeli\\OneDrive\\FH\\TH_Stelle\\DGaO\\Datensatz_03.12.2020\\'
+    os.chdir('..')
+    dataset_directory = 'Test_Data\\Patches\\'
     #Path to the trained model
     model_path = 'model\\'
 
     #Load pretrained model
     model = tf.keras.models.load_model(model_path)
 
-    #Load test dataset
-    test_dataframe = pd.read_csv(dataset_directory + 'Test_dataset_patches.csv', sep=';')
+    test_data = os.listdir(dataset_directory)
+    print(test_data)
+
+    test_data = [dataset_directory + s for s in test_data]
+    print(test_data)
 
     #Create lists containing the training image paths and labels
     X_test = list(dataset_directory + test_dataframe['Image'])

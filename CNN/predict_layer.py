@@ -121,9 +121,9 @@ def main():
 
     #Path to the CNN Model
     os.chdir('..')
-    model_path = '\\model\\'
+    model_path = 'model\\'
     #Path to the folder containing the entire layer images
-    project_folder = '\\Test_Data\\Layers\\'
+    layers_folder = 'Test_Data\\Layers\\'
 
     patch_size = 128
     patch_overlap = 128 #if patch_size == patch_overlap -> No overlap between two patches
@@ -131,11 +131,11 @@ def main():
     
     #Load the cnn model
     cnn_model = tf.keras.models.load_model(model_path)
-    cnn_model.summary()
+
     #Get the list of all image filenames and their true slice labels.
     #Note: Slice Label is binary and applies to the whole Slice Layer. 0 -> Good Powderbed. 1 -> There is an error in the Layer
-    project_images = [project_folder + s for s in os.listdir(project_folder)]
-    
+    project_images = [layers_folder + s for s in os.listdir(layers_folder)]
+
     print('Note:\nClose the Layer Image to show the next one.')
 
     for i in range(len(project_images)):

@@ -67,7 +67,9 @@ def main():
     #Directory to the dataset containing the patches. 
     #Note: Specify the path to the folder containing the patches dataset and the .csv files.
     #'Training_dataset_patches.csv', 'Training_Data', 'Validation_dataset_patches.csv', 'Validation_Data'
-    dataset_directory = 'C:\\Users\\adeli\\OneDrive\\FH\\TH_Stelle\\DGaO\\Datensatz_03.12.2020\\'
+    os.chdir('..')
+    model_path = 'model\\'
+    dataset_directory = 'Dataset\\'
     #Path to store the trained model
     model_path = 'model\\'
 
