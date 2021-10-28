@@ -1,10 +1,20 @@
 # **SLM-CNN**
 
-This repository contains the source code, trained CNN model and examples for the proceedings paper:
+This repository contains the source code (written in python 3.7), trained CNN model and examples for the proceedings paper:
 
 CNN based powder bed monitoring and anomaly detection for the selective laser melting process
 
-## Dataset
+## This repository
+
+This repository contains:
+| Folder/file | Description |
+| --- | --- |
+| model | The trained CNN model, as described in the above mentioned paper |
+| source | Source code for training and evaluating the model |
+| Test_Data\Layers | Sample full layer images from the test set |
+| Test_Data\Patches | Sample patches, extracted from layers of the test set |
+| requirements.txt | Containing the required python modules |
+| model_plot.png<br>model_summary.png | Tensorflow/Keras graphical output of the trained model |
 
 ## Installation
 
