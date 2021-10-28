@@ -24,7 +24,10 @@ pip install -r requirements.txt
 ```
 
 ## Architecture
-<img src="./model_plot.png" width=30% height=30%> <img src="./model_summary.png" width=50% height=50%> 
+<p float="left">
+  <img src="./model_plot.png" width=30% height=30%>
+  <img src="./model_summary.png" width=50% height=50%> 
+</p>
 
 ## Results
 The model architecture, as seen in the previous section, was trained five times. Classification results were obtained by averaging the classification results of the test set.
