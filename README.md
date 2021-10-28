@@ -15,10 +15,10 @@ This repository contains:
 | CNN\predict_layer.py | File used to classify entire powder bed image layer |
 | CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
 | CNN\modules\\* | Modules used in the source code |
-| Test_Data\Layers | Sample full layer images from the test set |
-| Test_Data\Patches | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
+| Test_Data\Layers\ | Sample full layer images from the test set |
+| Test_Data\Patches\ | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
 | requirements.txt | Containing the required python modules |
-| model_plot.png<br>model_summary.png | Tensorflow/Keras graphical output of the trained model |
+| model_plot.png<br>model_summary.png<br>model_accuracy.png<br>model_loss.png | Tensorflow/Keras graphical output of the trained model<br>Training and validation history|
 
 ## Installation
 
@@ -26,7 +26,7 @@ If you want to run the model on the provided samples, please install the require
 ```
 pip install -r requirements.txt
 ```
-After the installation, you can run the trained model by 
+After the installation, you can run the trained model by starting the python files.
 
 ## Architecture
 <img src="./model_summary.png" width=50% height=50%> 
