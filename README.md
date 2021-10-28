@@ -14,7 +14,7 @@ This repository contains:
 | CNN\train_classifier.py | File used to train the model |
 | CNN\predict_layer.py | File used to classify entire powder bed image layer |
 | CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
-| CNN\modules\* | Modules used in the source code |
+| CNN\modules\\* | Modules used in the source code |
 | Test_Data\Layers | Sample full layer images from the test set |
 | Test_Data\Patches | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
 | requirements.txt | Containing the required python modules |
@@ -43,6 +43,8 @@ The model architecture, as seen in the previous section, was trained five times.
 | Accuracy | | | 0.8574±0.0080 |
 | Macro Average Accuracy | 0.8600±0.0070 | 0.8650±0.0076 | 0.8581±0.0084 |
 | Weighted Average Accuracy | 0.8618±0.0064 | 0.8574±0.0080 | 0.8552±0.0082 |
+
+<img src="model_accuracy.png" width="400"/> <img src="model_loss.png" width="400"/> 
 
 ## **Citation**
 
