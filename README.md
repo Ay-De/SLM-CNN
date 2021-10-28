@@ -1,8 +1,17 @@
 # **SLM-CNN**
 
-This repository contains the source code (written in python 3.7), trained CNN model and examples for the proceedings paper:
+This repository contains the source code (written in python 3.8), trained CNN model and examples for the proceedings paper:
 
 CNN based powder bed monitoring and anomaly detection for the selective laser melting process
+
+## Classification Samples
+
+Some classified layer examples. Classification is done patch wise:
+
+<p float="left">
+  <img src="/images/ClassifiedLayer1.png" width="250" />
+  <img src="/images/ClassifiedLayer2.png" width="250" /> 
+</p>
 
 ## This repository
 
@@ -44,15 +53,10 @@ The model architecture, as seen in the previous section, was trained five times.
 | Macro Average Accuracy | 0.8600±0.0070 | 0.8650±0.0076 | 0.8581±0.0084 |
 | Weighted Average Accuracy | 0.8618±0.0064 | 0.8574±0.0080 | 0.8552±0.0082 |
 
+
 <p float="left">
   <img src="/images/model_accuracy.png" width="250" />
   <img src="/images/model_loss.png" width="250" /> 
-</p>
-
-Some classified layer examples:
-<p float="left">
-  <img src="/images/ClassifiedLayer1.png" width="250" />
-  <img src="/images/ClassifiedLayer2.png" width="250" /> 
 </p>
 
 ## **Citation**
