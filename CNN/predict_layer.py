@@ -3,7 +3,6 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'    #1: filter out info logs, 2: filter 
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
-import pandas as pd
 import cv2
 
 plt.rcParams.update({'font.size': 20})
