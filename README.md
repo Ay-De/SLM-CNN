@@ -88,6 +88,4 @@ After the installation, you can run the trained model by starting the python fil
 
 ## **Contact**
 
-aydin [.] deliktas [at] th-ab [.] de
-
-michael [.] moeckel [at] th-ab [.] de
+aydin-slmcnn [at] protonmail.com
