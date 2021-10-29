@@ -25,7 +25,7 @@ This repository contains:
 
 ### Patch wise
 Classification of small patches and their heatmaps, showing the regions which were regarded as important for the neural network during classification.
-The Baseline is the starting point. Integrated Gradients are trying to find the important datapoints during classification. Attribution Mask is then applied to the original image as an overlay.
+The Baseline is the starting point. Integrated Gradients are trying to find datapoints which are important for the classification. Attribution Mask is then applied to the original image as an overlay.
 
 <p float="left">
   <img src="/images/ClassifiedPatch1.png" width="300" />
@@ -35,9 +35,9 @@ The Baseline is the starting point. Integrated Gradients are trying to find the 
 
 
 ### Entire Layer
-Patch wise classification with a patch size of 128x128 pixels and then applied to the entire powder bed Layer.
+Patch wise classification with a patch size of 128x128 pixels and then applied to the entire powder bed layer.
 
-Colors:
+Colours:
 
 White: Powder | Blue: Objects | Red: Error
 
