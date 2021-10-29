@@ -4,6 +4,23 @@ This repository contains the source code (written in python 3.8), trained CNN mo
 
 CNN based powder bed monitoring and anomaly detection for the selective laser melting process
 
+## This Repository
+
+This repository contains:
+| Folder/file | Description |
+| --- | --- |
+| model | The trained CNN model, as described in the above mentioned paper |
+| source | Source code for training and evaluating the model |
+| CNN\train_classifier.py | File used to train the model |
+| CNN\predict_layer.py | File used to classify entire powder bed image layer |
+| CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
+| CNN\modules\\* | Modules used in the source code |
+| Test_Data\Layers\ | Sample full layer images from the test set |
+| Test_Data\Patches\ | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
+| requirements.txt | Containing the required python modules |
+| images | Training and validation history<br>Tensorflow/Keras graphical output of the trained model<br>Classified Layer samples |
+
+
 ## Classification Samples
 
 ### Patch wise
@@ -30,33 +47,15 @@ White: Powder | Blue: Objects | Red: Error
   <img src="/images/ClassifiedLayer3.png" width="250" /> 
 </p>
 
-## This repository
-
-This repository contains:
-| Folder/file | Description |
-| --- | --- |
-| model | The trained CNN model, as described in the above mentioned paper |
-| source | Source code for training and evaluating the model |
-| CNN\train_classifier.py | File used to train the model |
-| CNN\predict_layer.py | File used to classify entire powder bed image layer |
-| CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
-| CNN\modules\\* | Modules used in the source code |
-| Test_Data\Layers\ | Sample full layer images from the test set |
-| Test_Data\Patches\ | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
-| requirements.txt | Containing the required python modules |
-| images | Training and validation history<br>Tensorflow/Keras graphical output of the trained model<br>Classified Layer samples |
-
-## Installation
-
-If you want to run the model on the provided samples, please install the requirements.txt first:
-```
-pip install -r requirements.txt
-```
-After the installation, you can run the trained model by starting the python files.
-
-## Architecture
+## Model Architecture
 <img src="./images/model_summary.png" width=50% height=50%> 
 
+## Training and Validation History:
+
+<p float="left">
+  <img src="/images/model_accuracy.png" width="250" />
+  <img src="/images/model_loss.png" width="250" /> 
+</p>
 
 ## Results
 The model architecture, as seen in the previous section, was trained five times. Classification results were obtained by averaging the classification results of the test set.
@@ -70,21 +69,22 @@ The model architecture, as seen in the previous section, was trained five times.
 | Macro Average Accuracy | 0.8600±0.0070 | 0.8650±0.0076 | 0.8581±0.0084 |
 | Weighted Average Accuracy | 0.8618±0.0064 | 0.8574±0.0080 | 0.8552±0.0082 |
 
-
-<p float="left">
-  <img src="/images/model_accuracy.png" width="250" />
-  <img src="/images/model_loss.png" width="250" /> 
-</p>
-
 ## **Citation**
 
 Please consider citing this paper if you deem it helpful in your research:
 
 ```
-Placeholder
-for
-bibtex cite
+Coming soon
 ```
+
+## Installation
+
+If you want to run the model on the provided samples, please install the requirements.txt first:
+```
+pip install -r requirements.txt
+```
+After the installation, you can run the trained model by starting the python files.
+
 
 ## **Contact**
 
