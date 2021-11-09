@@ -58,7 +58,7 @@ def main():
 
     plt.show()
 
-    #This part will show the wrongly classified patches and the integrated gradients as an overlay
+    #This part will show the classified patches and the integrated gradients as an overlay
     #Close the Matplot window to show the next one.
 
     print(multiclass_classes)
