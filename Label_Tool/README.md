@@ -3,8 +3,8 @@ There are two versions of this Label Tool.
 V1 (left) and V2 (right):
 
 <p float="left">
-  <img src="/Label_Tool/tool_v1.png" width="250" />
-  <img src="/Label_Tool/tool_v2.png" width="250" /> 
+  <img src="/Label_Tool/tool_v1.png" width="300" />
+  <img src="/Label_Tool/tool_v2.png" width="300" /> 
 </p>
 
 Tool V2 was used in this work and is based on V1 with a few changes.
