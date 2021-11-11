@@ -15,6 +15,7 @@ This repository contains:
 | CNN\predict_layer.py | File used to classify entire powder bed image layer |
 | CNN\predict_patches.py | File used to classify small patches extracted from the powder bed|
 | CNN\modules\\* | Modules used in the source code |
+| Label_Tool | Created tool to label the layer images and create the dataset of smaller patches|
 | Test_Data\Layers\ | Sample full layer images from the test set |
 | Test_Data\Patches\ | Sample patches, extracted from layers of the test set<br>Note: Patches are sorted by class|
 | requirements.txt | Containing the required python modules |
