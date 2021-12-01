@@ -2,7 +2,8 @@
 
 This repository contains the source code (written in python 3.8), trained CNN model and examples for the proceedings paper:
 
-CNN based powder bed monitoring and anomaly detection for the selective laser melting process
+[CNN based powder bed monitoring and anomaly detection for the selective laser melting process](https://www.dgao-proceedings.de/download/122/122_p10.pdf)
+
 
 ## This Repository
 
